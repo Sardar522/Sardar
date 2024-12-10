@@ -26,9 +26,10 @@
             text-decoration: none;
             color: #fff;
             margin: 0 10px;
+            font-weight: bold;
         }
         section {
-            padding: 2rem;
+            padding: 2rem 1rem;
         }
         .container {
             max-width: 1200px;
@@ -38,6 +39,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 20px;
+            justify-content: center;
         }
         .project {
             background-color: #fff;
@@ -45,7 +47,8 @@
             border-radius: 8px;
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             padding: 1rem;
-            flex: 1 1 calc(33.333% - 20px);
+            flex: 1 1 calc(30% - 20px);
+            text-align: center;
         }
         footer {
             text-align: center;
@@ -67,6 +70,13 @@
         }
         .button:hover {
             background-color: #0056b3;
+        }
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul li {
+            margin: 5px 0;
         }
     </style>
 </head>
@@ -104,10 +114,10 @@
         <h2>Байланыс</h2>
         <p>Сіз менімен келесі ақпарат арқылы хабарласа аласыз:</p>
         <ul>
-            <li>Телефон: 87071140506</li>
+            <li>Телефон: 87470701648</li>
             <li>Email: sardarsako9@gmail.com</li>
         </ul>
-        <a href="https://sardarsako9.wixsite.com/sardar" class="button">Менің Wix-сайтым</a>
+        <a href="https://sardarsako9.wixsite.com/sardar" class="button" target="_blank">Менің Wix-сайтым</a>
     </section>
     <footer>
         <p>&copy; 2024 Сардар Айдаров. Барлық құқықтар қорғалған.</p>
