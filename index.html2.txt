@@ -9,52 +9,108 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
+            background-color: #f4f4f4;
             color: #333;
         }
         header {
-            background-color: #4CAF50;
-            color: white;
-            padding: 20px;
+            background-color: #333;
+            color: #fff;
+            padding: 1rem 0;
             text-align: center;
         }
-        .btn {
-            display: inline-block;
-            margin: 20px 0;
-            padding: 10px 20px;
-            font-size: 18px;
-            color: white;
-            background-color: #007BFF;
+        nav {
+            margin: 10px 0;
+            text-align: center;
+        }
+        nav a {
             text-decoration: none;
-            border-radius: 5px;
-            transition: background-color 0.3s;
+            color: #fff;
+            margin: 0 10px;
         }
-        .btn:hover {
-            background-color: #0056b3;
+        section {
+            padding: 2rem;
         }
-        main {
-            padding: 20px;
-            text-align: center;
+        .container {
+            max-width: 1200px;
+            margin: auto;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 1rem;
+            flex: 1 1 calc(33.333% - 20px);
         }
         footer {
-            background-color: #333;
-            color: white;
             text-align: center;
-            padding: 10px;
-            margin-top: 40px;
+            padding: 1rem 0;
+            background-color: #333;
+            color: #fff;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: #fff;
+            background-color: #007bff;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            text-align: center;
+            cursor: pointer;
+        }
+        .button:hover {
+            background-color: #0056b3;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Қош келдіңіз менің портфолиома!</h1>
-        <a href="https://sardarsako9.wixsite.com/sardar" class="btn" target="_blank">Менің портфолиом</a>
+        <h1>Сардар Айдаровтың Портфолиосы</h1>
+        <nav>
+            <a href="#about">Өзім туралы</a>
+            <a href="#projects">Жобалар</a>
+            <a href="#contact">Байланыс</a>
+        </nav>
     </header>
-    <main>
-        <h2>Бұл сайт менің жұмысымды таныстыруға арналған</h2>
-        <p>Төмендегі батырма арқылы портфолиомды қарай аласыз.</p>
-    </main>
+    <section id="about" class="container">
+        <h2>Өзім туралы</h2>
+        <p>Мен Сардар Айдаровпын, студент және болашақ IT маманымын. Мен ақпараттық технологиялар саласында білім алып жатырмын және өзімнің дағдыларымды жақсарту үшін әртүрлі жобалармен айналысамын.</p>
+    </section>
+    <section id="projects" class="container">
+        <h2>Менің Жобаларым</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Жоба 1: Веб-сайт жасау</h3>
+                <p>Бұл менің алғашқы веб-сайт жобам. HTML, CSS және JavaScript қолданылды.</p>
+            </div>
+            <div class="project">
+                <h3>Жоба 2: Мобильді қолданба</h3>
+                <p>Android платформасы үшін қарапайым қолданба жасап көрдім.</p>
+            </div>
+            <div class="project">
+                <h3>Жоба 3: Python скрипттері</h3>
+                <p>Деректерді өңдеу және талдау үшін Python тілінде скрипт жаздым.</p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="container">
+        <h2>Байланыс</h2>
+        <p>Сіз менімен келесі ақпарат арқылы хабарласа аласыз:</p>
+        <ul>
+            <li>Телефон: 87071140506</li>
+            <li>Email: sardarsako9@gmail.com</li>
+        </ul>
+        <a href="https://sardarsako9.wixsite.com/sardar" class="button">Менің Wix-сайтым</a>
+    </section>
     <footer>
-        &copy; 2024 Менің атым. Барлық құқықтар қорғалған.
+        <p>&copy; 2024 Сардар Айдаров. Барлық құқықтар қорғалған.</p>
     </footer>
 </body>
 </html>
